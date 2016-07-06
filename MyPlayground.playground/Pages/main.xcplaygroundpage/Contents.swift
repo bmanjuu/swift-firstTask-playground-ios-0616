@@ -16,14 +16,15 @@
 */
 // write your code here
 
-
+var currentBankAccountBalance: Int = 1
+//var because the balance can change! Int instead of String because it would be easy to increment/decrement amounts of money flowing into and out of the account
 
 
 /*: question2
 ### 2. You went to your local pet store and purchased yourself a puppy. You decided to name the puppy Bella. Once you named her, that name will stick with her forever. Create a variable that stores the name of your new puppy.
 */
 // write your code here
-
+let myNewBestFriend = "Bella"
 
 
 
@@ -31,7 +32,7 @@
 ### 3. Use the `print()` function to print the name of your new puppy to the console.
 */
 // write your code here
-
+print(myNewBestFriend)
 
 
 
@@ -39,6 +40,7 @@
 ### 4. Use the `print()` function to print the sentence "I just got a new puppy named <your puppy's name> and she is awesome!" to the console.
 */
 // write your code here
+print("I just got a new puppy named \(myNewBestFriend) and she is awesome!")
 
 
 
@@ -47,7 +49,7 @@
 ### 5. Use the `print()` function to print the sentence "I have $<balance> in my bank account." to the console.
 */
 // write your code here
-
+print("I have $\(currentBankAccountBalance) in my bank account.")
 
 
 
@@ -55,7 +57,8 @@
 ### 6. Congratulations! You just got $100 for your birthday, so now you have $100 more in your bank account. Update your bank account with the new balance and print "I now have $<balance>." to the console.
 */
 // write your code here
-
+currentBankAccountBalance += 100
+print("I have $\(currentBankAccountBalance) in my bank account.")
 
 
 
@@ -63,7 +66,8 @@
 ### 7. You decided you don't like the name Bella. Change your puppy's name to something else. (Can you do this? What happens when you try? Why?)
 */
 // write your code here
-
+// myNewBestFriend = Mochi
+//cannot change it because it is a constant!!
 
 
 
